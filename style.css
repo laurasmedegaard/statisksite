@@ -32,3 +32,8 @@ a {
     transform: scaleX(-1) translateX(-0.2rem);
     color: rgb(246, 162, 238);
   }
+  .productlist main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+    gap: 2rem;
+  }
