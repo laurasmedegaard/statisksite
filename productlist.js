@@ -18,32 +18,14 @@ function showProduct(product){
         //udsolgt
         copy.querySelector("article").classList.add("soldOut");
     }
+
+    // if(product.discount != null){
+    //     copy.querySelector(".price").classList.add("displayLineThrough");
+    //     }
+    //     else {
+    //         copy.querySelector(".productlist-card-price").classList.add("displayNone");
+    // }
+    
     //appende
     document.querySelector("main").appendChild(copy);
 }
-/* 
- <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
-          <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-          <p class="subtle">Tshirts | Nike</p>
-          <p class="price"><span>Prev.</span> DKK 1595,-</p>
-          <div class="discounted">
-            <p>Now DKK 1560,-</p>
-            <p>-34%</p>
-          </div>
-          <a href="product.html">
-{
-  "id": 1163,
-  "gender": "Men",
-  "category": "Apparel",
-  "subcategory": "Topwear",
-  "articletype": "Tshirts",
-  "season": "Summer",
-  "productionyear": 2011,
-  "usagetype": "Sports",
-  "productdisplayname": "Sahara Team India Fanwear Round Neck Jersey",
-  "price": 895,
-  "discount": null,
-  "brandname": "Nike",
-  "soldout": 0
-}
-*/
