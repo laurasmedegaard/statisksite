@@ -1,68 +1,58 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Produkt</title>
+    <title>Some Product</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
-  <body class="produktliste">
+  <body class="product">
     <header class="mainNav">
-      <a href="index.html">
-        <h1>Fashion<span>R</span>Us</h1>
-      </a>
+      <h1>Fashion<span>R</span>Us</h1>
       <nav>
-        <a href="#">Kategorier</a> 
-        <a href="kategori.html">Produkt</a> 
-        <a href="#">Nyheder</a>
+        <a href="category.html">Categories</a>
+        <a href="#">Brands</a>
+        <a href="#">Seasons</a>
       </nav>
     </header>
     <main>
-      <h2>Puma</h2>
-      <article class="smallProduct">
-        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp" alt="Puma Guy" />
-        <h3>Laksefarvet Puma trøje med rund hals</h3>
-        <p class="subtle">T-shirts // Puma</p>
-        <p class="pris"><span>Prev.</span>DKK 500,-</p>
-        <!-- <div class="discounted"><p>Now DKK 250,-</p><p>-50%</p>    </div> -->
-        <a href="produkt.html">Læs mere</a>
-      </article>
-
-      <article class="smallProduct onSale">
-        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1533.webp" alt="Puma Guy" />
-        <h3>Laksefarvet Puma trøje med rund hals</h3>
-        <p class="subtle">T-shirts // Puma</p>
-        <p class="pris"><span>Prev.</span>DKK 500,-</p>
-        <div class="discounted">
-          <p>Now DKK 250,-</p>
-
-          <p>-50%</p>
-        </div>
-        <a href="produkt.html">Læs mere</a>
-      </article>
-
-      <article class="smallProduct soldOut">
-        <img src="https://kea-alt-del.dk/t7/images/jpg/640/1552.jpg" alt="Puma bold" />
-        <h3>Puma fodbold</h3>
-        <p class="subtle">Bold // Puma</p>
-        <p class="pris"><span>Prev.</span>DKK 300,-</p>
-        <!-- <div class="discounted"><p>Now DKK 150,-</p><p>-50%</p>    </div> --><a href="produkt.html">Læs mere</a>
-      </article>
-
-      <article class="smallProduct soldOut onSale">
-        <img src="https://kea-alt-del.dk/t7/images/jpg/640/1552.jpg" alt="Puma bold" />
-        <h3>Puma fodbold</h3>
-        <p class="subtle">Bold // Puma</p>
-        <p class="pris"><span>Prev.</span>DKK 300,-</p>
-        <div class="discounted">
-          <p>Now DKK 150,-</p>
-
-          <p>-50%</p>
-        </div>
-        <a href="produkt.html">Læs mere</a>
-      </article>
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html">Categories</a></li>
+        <li><a href="productlist.html">Apparel</a></li>
+        <li>Sahara Team India Fanwear Round Neck Jersey</li>
+      </ol>
+      <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="Sahara Team India Fanwear Round Neck Jersey" />
+      <section class="purchaseBox">
+        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+        <p>Nike | Tshirts</p>
+        <form>
+          <label
+            >Choose a size
+            <select name="size">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </label>
+          <button>Add to basket</button>
+        </form>
+      </section>
+      <section class="info">
+        <h2>Product Information</h2>
+        <dl>
+          <dt>Model name</dt>
+          <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
+          <dt>Color</dt>
+          <dd>Blue</dd>
+          <dt>Inventory number</dt>
+          <dd>1163</dd>
+        </dl>
+        <h1>Nike</h1>
+        <p>Nike, creating experiences for today’s athlete</p>
+      </section>
     </main>
   </body>
 </html>
