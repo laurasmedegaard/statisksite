@@ -5,6 +5,7 @@ h1 {
     letter-spacing: -0.2rem;
     line-height: 2;
     color: pink;
+    text-align: center;
 }
 a {
     color: blue;
@@ -36,4 +37,9 @@ img {
 h2 {
     font-size: 3rem;
     line-height: 1;
+    text-align: center;
+}
+
+.soldOut img {
+    filter: grayscale(100%);
 }
