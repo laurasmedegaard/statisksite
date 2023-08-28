@@ -1,6 +1,6 @@
 fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
     .then((res) => res.json())
-    .then(showProduct);
+    .then(showProducts);
 
 function showProducts(products){
     //looper og kalder showProduct
@@ -14,6 +14,10 @@ function showProduct(product){
     const copy = template.cloneNode(true);
     //ændre indhold
     copy.querySelector("h3").textContent = product.productdisplayname;
+    if(product.soldout){
+        //udsolgt
+        copy.querySelector("article").classList.add("soldOut");
+    }
     //appende
     document.querySelector("main").appendChild(copy);
 }
