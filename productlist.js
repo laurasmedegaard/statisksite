@@ -14,7 +14,7 @@ function showProduct(product){
     const copy = template.cloneNode(true);
     //ændre indhold
     copy.querySelector("h3").textContent = product.productdisplayname;
-    if(product.soldout){
+    if (product.soldout){
         //udsolgt
         copy.querySelector("article").classList.add("soldOut");
     }
