@@ -1,19 +1,19 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
-    .then(res=>res.json())
-    .then(showProduct)
+fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
+    .then((res) => res.json())
+    .then(showProduct);
 
 function showProducts(products){
     //looper og kalder showProduct
-    products.forEach(showProduct)
+    products.forEach(showProduct);
 }
 function showProduct(product){
     //console.log(product)
     //fange template
-    const template = document.querySelector("#smallProductTemplate").textContent;
+    const template = document.querySelector("#smallProductTemplate").content;
     //lav en kopi
     const copy = template.cloneNode(true);
     //ændre indhold
-    copy.querySelector("h3").textContent=product.productdisplayname;
+    copy.querySelector("h3").textContent = product.productdisplayname;
     //appende
     document.querySelector("main").appendChild(copy);
 }
