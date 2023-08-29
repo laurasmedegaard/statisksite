@@ -7,7 +7,7 @@ function showProducts(products){
     products.forEach(showProduct);
 }
 function showProduct(product){
-    //console.log(product)
+    // console.log(product)
     //fange template
     const template = document.querySelector("#smallProductTemplate").content;
     //lav en kopi
@@ -17,12 +17,13 @@ function showProduct(product){
     copy.querySelector(".subtle").textContent = product.subcategory;
     copy.querySelector(".price").textContent = product.price;
     copy.querySelector(".discounted").textContent = product.discount;
-    copy.querySelector("img").src=`https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`
+    copy.querySelector("img").src=`https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
     if (product.soldout){
         //udsolgt
         copy.querySelector("article").classList.add("soldOut");
     }
+    copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
     //appende
     document.querySelector("main").appendChild(copy);
 }
