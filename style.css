@@ -11,23 +11,39 @@ main {
     justify-content: center;
     text-align: center;
 }
-.mainNav {
-    justify-content: center;
-    text-align: center;
+body{
+    margin: 0;
+    background-color: rgb(236, 235, 235);
 }
-
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #858484;
+  }
+  .mainNav nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+  }
 header {
     justify-content: center;
 }
 footer {
-    justify-content: center;
-}
+    background-color: #858484;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
 a {
     color: blue;
     text-decoration: none;
 }
 .mainNav h1 {
     color: pink;
+    
 }
 .mainNav h1 span {
     display: inline-block;
