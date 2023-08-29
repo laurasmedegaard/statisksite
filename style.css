@@ -1,11 +1,26 @@
 h1 {
-    font-size: 8rem;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 0;
     letter-spacing: -0.2rem;
     line-height: 2;
     color: pink;
     text-align: center;
+}
+main {
+    justify-content: center;
+    text-align: center;
+}
+.mainNav {
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    justify-content: center;
+}
+footer {
+    justify-content: center;
 }
 a {
     color: blue;
@@ -31,15 +46,11 @@ img {
     height: auto;
   }
 
-.productlist main h2 {
-    grid-column: 1/-1;
-}
 h2 {
-    font-size: 3rem;
+    font-size: rem;
     line-height: 1;
     text-align: center;
 }
-
 .soldOut img {
     filter: grayscale(100%);
 }
