@@ -84,3 +84,18 @@ h2 {
     padding: 10px 15px;
     border-radius: 20px;
 }
+
+/* Kasse styling */
+
+/* .letterGroup {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+.letterGroup a {
+    text-decoration: none;
+    padding: 2em;
+    color: white;
+    background-color: pink;
+    border-radius: 20px;
+  } */
