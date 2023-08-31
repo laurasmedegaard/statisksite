@@ -21,7 +21,7 @@ body{
     align-items: center;
     padding: 20px;
     background-color: #858484;
-  }
+}
   .mainNav nav a {
     color: white;
     margin-right: 20px;
@@ -85,17 +85,14 @@ h2 {
     border-radius: 20px;
 }
 
-/* Kasse styling */
+/* .sale {
+    background-color: aqua;
+} */
 
-/* .letterGroup {
+/* Kasse styling */
+.grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-  }
-.letterGroup a {
-    text-decoration: none;
-    padding: 2em;
-    color: white;
-    background-color: pink;
-    border-radius: 20px;
-  } */
+   
+}
+
