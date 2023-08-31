@@ -33,7 +33,7 @@ if (discount && discount !== 0) {
     copy.querySelector(".discounted").style.display = "none";
 }
     //Rund til et helt nummer
-    const total = Math.round(product.price - (product.price / 100) * product.discount);
+const total = Math.round(product.price - (product.price / 100) * product.discount);
 
     //ændre indhold
     copy.querySelector("h3").textContent = product.productdisplayname;

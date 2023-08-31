@@ -85,14 +85,111 @@ h2 {
     border-radius: 20px;
 }
 
-/* .sale {
-    background-color: aqua;
-} */
 
-/* Kasse styling */
+
+
+/* diverse */
+.smallProduct {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.smallProduct img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+} 
+
+  .smallProduct h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.subtle {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+  
+  .price {
+    font-size: 1rem;
+  }
+  
+  .price span {
+    text-decoration: line-through;
+    color: #d50a0a;
+    margin-right: 5px;
+  }
+  
+.discounted {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+.discounted p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+  
+.discounted p:last-child {
+    background-color: #d0feb1;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+  
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #00b3ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.read-more:hover {
+    background-color: #0b7bfb;
+}
+  
+
+/* */
+.category {
+    align-items: center;
+    
+  }
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   
+    gap: 20px;
 }
 
+  .letterGroup {
+    margin-bottom: 20px;
+  }
+  
+  .grid-container li {
+    list-style: none;
+  }
+  
+  .grid-container a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #2c2929;
+    border-radius: 4px;
+    text-align: center;
+    color: #201e1e;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .grid-container a:hover {
+    background-color: #aab9a1;
+  }

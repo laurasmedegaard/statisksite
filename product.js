@@ -11,9 +11,7 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 function showProduct(product){
     const productImg = document.querySelector(".product-img img");
     const productText = document.querySelector(".product-text");
-
     productImg.src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-
     const productDetailCopy = productDetailTemplate.cloneNode(true);
 
     //price
@@ -44,7 +42,7 @@ function showProduct(product){
 
      //Udsolgt produkt
      if (product.soldout) {
-      productDetailCopy.querySelector(".article").classList.add("soldOut");
+      productDetailCopy.querySelector(".soldOut2").classList.add("soldOut");
      }
      productText.appendChild(productDetailCopy);
 }
